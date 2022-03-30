@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+nav a {
+  color: white;
+  padding: 50px 20px;
+  text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex: 30%;
+    background-color:#a3a3a3;
+    padding: 10px;
+}
+
+section {
+    flex:70%;
+    background-color:rgb(121, 121, 121);
+    padding: 10px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color:#333;
+    flex: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.argLogo {
+  display: flex;
+  width: 50%;
+  padding: 5px 10px;
+  flex-flow:row wrap; /* Necesario para usar @media*/
+  justify-self: flex-start;
+  min-width: 50px;
+  max-width: 150px;
+}
+
+@media (max-width: 768px) {
+  nav, .row {
+      flex-direction: column;
+  }
+}
