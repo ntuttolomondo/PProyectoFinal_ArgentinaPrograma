@@ -3,65 +3,156 @@
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.wrap {
+  padding: 0px 150px;
+  margin: 0;
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  background-color: #333;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
-  align-items: center;
-  justify-content: center;
+  background-color: #ccc;
+  text-align: center;
 }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #333;
+  color: #fff;
+  padding:10px;
+}
+
 nav a {
   color: white;
-  padding: 50px 20px;
   text-decoration: none;
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 aside {
-    flex: 30%;
-    background-color:#a3a3a3;
-    padding: 10px;
+  flex: 30%;
+  background-color: #a3a3a3;
+  padding: 10px;
 }
 
 section {
-    flex:70%;
-    background-color:rgb(121, 121, 121);
-    padding: 10px;
+  flex: 70%;
+  background-color: rgb(121, 121, 121);
+  padding: 10px;
 }
 
 footer {
-    padding: 10px;
-    text-align: center;
-    background-color:#333;
-    flex: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #333;
+  flex: 100%;
 }
 
 img {
-    width: 100%;
+  width: 100%;
+  padding: 0px;
 }
 
 .argLogo {
   display: flex;
-  width: 50%;
-  padding: 5px 10px;
-  flex-flow:row wrap; /* Necesario para usar @media*/
-  justify-self: flex-start;
+  flex: 50%;
+  flex-flow: row wrap; /* Necesario para usar @media*/
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+.argLogo > img {
+  max-width: 100px;
   min-width: 50px;
-  max-width: 150px;
 }
 
-@media (max-width: 768px) {
-  nav, .row {
-      flex-direction: column;
+.socialMedia {
+  display: flex;
+  flex: 50%;
+  flex-flow: row wrap; /* Necesario para usar @media*/
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.socialMedia > img {
+  max-width: 40px;
+  min-width: 20px;
+  padding: 5px 5px;
+}
+
+.banner {
+  display: flex;
+  flex: 100%;
+}
+
+.separator {
+  display: flex;
+  flex:100%;
+  background-color: #333;
+  flex-flow: row wrap; /* Necesario para usar @media*/
+  color: #f7d9de;
+  padding: 10px 30px;
+  justify-content: flex-end;
+  align-items: center;
+}
+  
+.profile {
+  display: flex;
+  flex: 100%;
+  flex-flow: row wrap; /* Necesario para usar @media*/
+  max-width:  120px;
+  position: fixed;
+  margin-right: 30px;
+  z-index: 1;
+}
+
+div#separator span {
+margin-right: 180px;
+font-size: 16pt;
+}
+
+
+
+
+@media (max-width: 576px) {
+  .wrap,
+  nav,
+  .row,
+  .socialMedia,
+  .argLogo,
+  .separator,
+
+  {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 100%;
+    padding: 10px;
+    font-size: 10pt;
   }
+
+}
+
+@media (max-width: 576px) {
+  .profile,
+  .banner,
+  div#separator span  {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 100%;
+    position: static;
+    padding: 0px;
+    margin-right: 0px;
+    font-size: 10pt;
+    text-align: center;
+  }
+
 }
