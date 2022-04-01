@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  background-color: #ccc;
+  background-color: #333;
   text-align: center;
 }
 
@@ -22,7 +22,7 @@ nav {
   flex-wrap: wrap;
   background-color: #333;
   color: #fff;
-  padding:10px;
+  padding: 10px;
 }
 
 nav a {
@@ -37,13 +37,13 @@ nav a {
 
 aside {
   flex: 30%;
-  background-color: #a3a3a3;
+  background-color: #f7d9de;
   padding: 10px;
 }
 
 section {
   flex: 70%;
-  background-color: rgb(121, 121, 121);
+  background-color: #dad0d0;
   padding: 10px;
 }
 
@@ -94,42 +94,35 @@ img {
 
 .separator {
   display: flex;
-  flex:100%;
+  flex: 100%;
   background-color: #333;
   flex-flow: row wrap; /* Necesario para usar @media*/
   color: #f7d9de;
   padding: 10px 30px;
   justify-content: flex-end;
   align-items: center;
+  font-size: 18pt;
 }
-  
+
 .profile {
   display: flex;
   flex: 100%;
   flex-flow: row wrap; /* Necesario para usar @media*/
-  max-width:  120px;
-  position: fixed;
-  margin-right: 30px;
+  max-width: 120px;
+  position: absolute;
   z-index: 1;
 }
 
 div#separator span {
-margin-right: 180px;
-font-size: 16pt;
+  padding-right: 150px;
 }
 
-
-
-
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .wrap,
   nav,
-  .row,
   .socialMedia,
   .argLogo,
-  .separator
-
-  {
+  .separator {
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -137,22 +130,26 @@ font-size: 16pt;
     padding: 10px;
     font-size: 10pt;
   }
-
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .profile,
   .banner,
-  div#separator span  {
+  div#separator span {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex: 100%;
     position: static;
     padding: 0px;
-    margin-right: 0px;
     font-size: 10pt;
     text-align: center;
   }
-
+  @media (max-width: 768px) {
+    nav,
+    .row {
+      flex-direction: column;
+      padding: 0px;
+    }
+  }
 }
