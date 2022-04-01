@@ -6,9 +6,12 @@ body {
   padding: 0;
   margin: 0;
 }
+h2 {
+  font-size: 18px;
+}
 
 .wrap {
-  padding: 0px 150px;
+  padding: 0px 350px;
   margin: 0;
 }
 
@@ -19,7 +22,7 @@ header {
 nav {
   display: flex;
   flex-wrap: wrap;
-  background-color: #333;
+  background-color: #666;
   padding: 10px;
 }
 
@@ -36,14 +39,14 @@ aside {
 
 section {
   flex: 70%;
-  background-color: #d6d6d6;
-  padding: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 footer {
   padding: 10px;
   text-align: center;
-  background-color: #333;
+  background-color: #666;
   flex: 100%;
 }
 
@@ -88,7 +91,7 @@ img {
 .separator {
   display: flex;
   flex: 100%;
-  background-color: #333;
+  background-color: #666;
   flex-flow: row wrap; /* Necesario para usar @media*/
   color: #f7d9de;
   padding: 10px 30px;
@@ -121,7 +124,6 @@ div#separator span {
     align-items: center;
     flex: 100%;
     padding: 10px;
-    font-size: 10pt;
   }
 }
 
@@ -135,9 +137,11 @@ div#separator span {
     flex: 100%;
     position: static;
     padding: 0px;
-    font-size: 10pt;
+    font-size: 18pt;
     text-align: center;
   }
+
+
   @media (max-width: 768px) {
     nav,
     .row {
