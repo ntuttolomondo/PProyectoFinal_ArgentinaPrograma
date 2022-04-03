@@ -46,13 +46,21 @@ nav {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
 }
 
 aside {
   flex: 30%;
   background-color: #f7d9de;
+}
+
+.skills {
+  display: flex;
   padding: 0px 20px;
+  justify-content: center;
+}
+
+.skills img {
+ max-width:  150px;
 }
 
 section {
@@ -61,8 +69,6 @@ section {
   padding: 0px 20px;
   text-align: left;
 }
-
-
 
 .aside2 {
   flex: 40%;
@@ -74,14 +80,6 @@ section {
 .section2 {
   flex: 60%;
   background-color: #f2f2f2;
-}
-
-footer {
-  padding: 10px;
-  text-align: center;
-  background-color: #666;
-  flex: 100%;
-  order: 3;
 }
 
 img {
