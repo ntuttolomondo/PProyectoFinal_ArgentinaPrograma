@@ -25,6 +25,7 @@ li::before {
 
 .titulo {
   border-bottom: solid 1px #f7d9de ;
+  background-color: #f2f2f2;
 }
 
 .wrapper {
@@ -50,7 +51,7 @@ nav {
 
 aside {
   flex: 30%;
-  background-color: #f7d9de;
+  background-color: #c2c2c2;
 }
 
 .skills {
@@ -147,6 +148,7 @@ div#separator span {
 @media (max-width: 768px) {
   .wrapper {
     padding: 0px;
+    min-width: 280px;
   }
   nav,
   .socialMedia,
@@ -164,6 +166,7 @@ div#separator span {
     position: static;
     flex-direction: row;
     padding: 0px;
+    padding-right: 0px;
     font-size: 14pt;
     flex: 100%;
 
