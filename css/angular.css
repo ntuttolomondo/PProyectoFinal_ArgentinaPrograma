@@ -57,3 +57,8 @@
 .pink1 {
     background-color: #f7d9de;
 }
+
+.titulo {
+  border-bottom: solid 1px #f7d9de;
+  background-color: #f2f2f2;
+}
