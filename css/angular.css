@@ -1,0 +1,59 @@
+@media (max-width: 845px) {
+    .no-mp, .row {
+      padding:0px;
+      margin:0px;
+    }
+  }
+
+  * {
+    font-family: "Work Sans", Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  html {
+    font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  }
+
+ 
+ .socialMedia img {
+    max-width: 50px;
+    min-width: 30px;
+    padding: 0px 10px;
+  }
+
+  .skills img {
+    max-width: 500px;
+  }
+
+  .darkGrey1 {
+      background-color: #666;
+  }
+  
+  .lightGrey1 {
+      background-color: #f2f2f2
+    }
+
+.grey1 {
+    background-color: #c2c2c2;
+}
+
+.pink1 {
+    background-color: #f7d9de;
+}
