@@ -3,6 +3,9 @@
       padding:0px;
       margin:0px;
     }
+    aside {
+      order: 1;
+    }
   }
 
   * {
@@ -61,4 +64,28 @@
 .titulo {
   border-bottom: solid 1px #f7d9de;
   background-color: #f2f2f2;
+}
+
+li {
+  list-style-type: none;
+  position: relative;
+  /* It's needed for setting position to absolute in the next rule. */
+}
+
+li::before {
+  content: "·";
+  font-weight: bold;
+  position: absolute;
+  left: -10px;
+  /* Adjust this value so that it appears where you want. */
+}
+
+.profile {
+  display: flex;
+  flex: 100%;
+  flex-flow: row wrap;
+  /* Necesario para usar @media*/
+  max-width: 120px;
+  position: absolute;
+  z-index: 1;
 }

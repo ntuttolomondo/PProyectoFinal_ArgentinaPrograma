@@ -172,10 +172,8 @@ div#separator span {
     text-align: center;
   }
 
-  .profile,
-  .banner,
-  div#separator span {
-    position: static;
+  .profile {
+    position: absolute;
     flex-direction: row;
     padding: 0px;
     padding-right: 0px;
